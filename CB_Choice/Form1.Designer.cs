@@ -49,6 +49,7 @@
             this.textList.Name = "textList";
             this.textList.Size = new System.Drawing.Size(226, 21);
             this.textList.TabIndex = 1;
+            this.textList.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextList_KeyPress);
             // 
             // btnAdd
             // 
