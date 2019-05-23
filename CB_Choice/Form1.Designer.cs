@@ -28,13 +28,68 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cbList = new System.Windows.Forms.ComboBox();
+            this.textList = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // cbList
+            // 
+            this.cbList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbList.FormattingEnabled = true;
+            this.cbList.Location = new System.Drawing.Point(10, 12);
+            this.cbList.Name = "cbList";
+            this.cbList.Size = new System.Drawing.Size(287, 20);
+            this.cbList.TabIndex = 0;
+            // 
+            // textList
+            // 
+            this.textList.Location = new System.Drawing.Point(10, 52);
+            this.textList.Name = "textList";
+            this.textList.Size = new System.Drawing.Size(226, 21);
+            this.textList.TabIndex = 1;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Location = new System.Drawing.Point(244, 51);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(53, 22);
+            this.btnAdd.TabIndex = 2;
+            this.btnAdd.Text = "추가";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(12, 92);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(69, 12);
+            this.lblResult.TabIndex = 3;
+            this.lblResult.Text = "선택 결과 : ";
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(309, 227);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.textList);
+            this.Controls.Add(this.cbList);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox cbList;
+        private System.Windows.Forms.TextBox textList;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 
